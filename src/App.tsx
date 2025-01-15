@@ -1,11 +1,13 @@
 
-function App() {
+import { BrowserRouter } from "react-router";
+import { Router } from "./Router";
 
+function App() {
   return (
-    <>
-      <h1>Coffee Delivery</h1>
-    </>
-  )
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
 }
 
 export default App
