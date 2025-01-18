@@ -4,8 +4,17 @@ export const Container = styled.div`
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  /* min-width: 90rem;
+  min-height:6.5rem; */
+  align-items: center;
+  padding: 2rem 10rem;
+  font-family: Roboto;
 
-`
+    img{
+      width: 5.313rem;  
+      height: 2.5rem;     
+    }
+ `
 
 export const LabelLocale = styled.div`
   width: 143px;

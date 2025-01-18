@@ -7,17 +7,21 @@ export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
 
   :focus {
     outline: none;
   }
 
-  body {
-    -webkit-font-smoothing: antialiased;
-      font-family: 'Syne', serif;
-  }
+ body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Baloo 2', serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh; 
+
+}
 
   body, input, textarea, button {
     font-weight: 400;

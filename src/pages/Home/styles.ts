@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 120rem;
-  height: 34rem;
+  /* height: 34rem; */
   display: flex;
   flex-direction: row;
-  padding: 6.25rem 0;
-  margin-top: 3rem;
+  padding: 5rem 10rem;
+  margin-top: 94px;
+  background-image: url('/images/background.png');
 `;
 
 export const Title = styled.h1`
   font-size: 3rem;
-  font-family: 'Syne', serif;
+  font-family: 'Baloo 2', serif;
 `;
 
 export const Description = styled.span`
@@ -69,82 +70,15 @@ export const Spam = styled.h5`
 `
 
 export const ContainerMenu = styled.div`
+
+  padding: 2rem 10rem;
+  background-color: blue;
+
+
   h2{
+
     font-size: 2rem;
   }
 
 
-`
-export const CoffeeList = styled.div`
- margin-top: 3rem;
- margin-bottom: 3rem;
-`
-
-export const CoffeeCard = styled.div`
-  width: 16rem;
-  height: 20rem;
-  background-color: #F3F2F2;
-  border-radius: 3% 15%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap:2rem;
-  
-  h1{
-    font-size: 1.25rem;
-  }
-
-  h2{
-    text-align:center;
-    font-size: 0.875rem;
-    padding: 0 1.5rem; 
-  }
-`
-
-export const CoffeePrice = styled.div`
-
-  width:13rem;
-  height:2.375rem;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  h5{
-    font-size: 1.5rem;
-  }
-
-button {
-  width: 2.375rem;
-  height: 2.375rem;
-  border-radius: 10px;
-  background-color: #4B2995;
-  border: none;
-}
-
-button:hover {
-  color: inherit;
-}
-`
-
-export const InputQuantity = styled.div`
-  display:flex;
-  flex-direction: row;
-  width: 4.5rem;
-  height: 2.375rem;
-  background-color:#E6E5E5;
-  align-items: center;
-  justify-content: center;
-
-  input{
-  width: 0.875rem;
-  height: 0.875rem;  
-  }
-
-button{
-  width: 0.875rem;
-  height: 0.875rem;
-  background-color:#E6E5E5;
-}
 `

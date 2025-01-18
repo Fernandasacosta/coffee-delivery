@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router";
 import { Router } from "./Router";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/themes/default";
-// import { GlobalStyle } from "./styles/themes/global";
+import { GlobalStyle } from "./styles/themes/global";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Router />
     </BrowserRouter>
-    {/* <GlobalStyle /> */}
+    <GlobalStyle />
     </ThemeProvider>
     
   );

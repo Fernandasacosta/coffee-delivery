@@ -1,5 +1,7 @@
 import { Coffee, Package, ShoppingCart, Timer } from "@phosphor-icons/react";
-import { CoffeeCard, CoffeeInformation, CoffeeList, CoffeePrice, Container, ContainerInformation, ContainerMenu, Description, IconBaseText, IconPurple, IconYellow, IconYellowDark, InputQuantity, Spam, Title } from "./styles";
+import {  CoffeeInformation, Container, ContainerInformation, ContainerMenu, Description, IconBaseText, IconPurple, IconYellow, IconYellowDark, Spam, Title } from "./styles";
+import { Card } from "../../components/Card";
+import { coffees } from '../../data.json'
 
 export function Home(){
   return(
@@ -47,32 +49,9 @@ export function Home(){
         Nossos cafés
       </h2>
 
-      <CoffeeList>
-        <CoffeeCard>
-          <img src="/images/expresso.png"/>
-          <h1>Expresso Tradicional</h1>
-          <h2>O tradicional café feito com água quente e grãos moídos</h2>
-
-          <CoffeePrice>
-            <h5>R$ 9,90</h5> 
-
-            <InputQuantity>
-              <button /*onClick={decrement}*/>-</button>
-              <input type="number"  /*value={count} readOnly*/ />
-              <button /*onClick={increment}*/>+</button>
-            </InputQuantity>
-            
-            <button>  
-              <ShoppingCart 
-              color="white" 
-              size={22}/> 
-            </button>   
-          </CoffeePrice>
-          
-        </CoffeeCard>
-
-
-      </CoffeeList>
+      {coffees.map((coffee) => (
+            <Card key={coffee.id} coffee={coffee} />
+          ))}
 
 
     </ContainerMenu>
