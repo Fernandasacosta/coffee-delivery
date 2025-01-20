@@ -72,7 +72,7 @@ export const Spam = styled.h5`
 export const ContainerMenu = styled.div`
 
   padding: 2rem 10rem;
-  background-color: blue;
+  
 
 
   h2{

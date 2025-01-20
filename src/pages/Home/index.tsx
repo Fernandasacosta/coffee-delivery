@@ -49,9 +49,11 @@ export function Home(){
         Nossos cafés
       </h2>
 
+      <div>
       {coffees.map((coffee) => (
             <Card key={coffee.id} coffee={coffee} />
           ))}
+      </div>
 
 
     </ContainerMenu>
